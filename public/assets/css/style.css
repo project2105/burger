@@ -1,0 +1,33 @@
+.all {
+  background-color: #8b3d14;
+  width: 100vw;
+  height: 100%;
+}
+
+img {
+  width: 200px;
+}
+
+h2 {
+  color: white;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: white;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }

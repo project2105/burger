@@ -1,0 +1,65 @@
+<div class="all">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Eat Da Burger</h1>
+                <img src="assets/dancingBurger.gif" alt="Dancing Burger">
+                <img src="assets/dancingBurger.gif" alt="Dancing Burger">
+                <img src="assets/dancingBurger.gif" alt="Dancing Burger">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h2>Target Burgers</h2>
+                <ul>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    <li>
+                        {{burger_name}}
+                        <button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">Devour!</button>
+                    </li>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <h2>Eaten Burgers</h2>
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <li>
+                        {{burger_name}}
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Add a Burger</h2>
+                <form class="create-form">
+
+                    <div class="form-group">
+                        <label for="ca">Burger Name:</label>
+                        <input type="text" id="ca" name="burger_name">
+                    </div>
+
+                    <button type="submit">Add Burger</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Eat Da Burger</h1>
+                <img src="assets/dancingBurger.gif" alt="Dancing Burger">
+                <img src="assets/dancingBurger.gif" alt="Dancing Burger">
+                <img src="assets/dancingBurger.gif" alt="Dancing Burger">
+            </div>
+        </div>
+
+    </div>
+</div>
